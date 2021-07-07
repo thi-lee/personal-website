@@ -8,6 +8,8 @@ function createLetterKey(item) {
     return <LetterKey 
         key={item.id}
         letter={item.letter}
+        content={item.content}
+        onClickEvent={() => console.log(item.letter)}
     />
 }
 

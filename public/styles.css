@@ -59,6 +59,7 @@ footer {
     font-size: 40px;
     width: 100%;
     text-align: center;
+    cursor: pointer;
 }
 
 .display {
@@ -68,4 +69,5 @@ footer {
     justify-content: center;
     padding: 0 30px;
     overflow-y: scroll;
+    width: 100%;
 }

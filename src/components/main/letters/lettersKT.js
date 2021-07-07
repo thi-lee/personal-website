@@ -5,7 +5,9 @@ const lettersKT =  [
     },
     {
         id: 12,
-        letter: "L"
+        letter: "L",
+        header: "Learning",
+        content: "I'm currently learning react and web development"
     },
     {
         id: 13,
@@ -21,7 +23,9 @@ const lettersKT =  [
     },
     {
         id: 16,
-        letter: "P"
+        letter: "P",
+        header: "Projects",
+        content: "Todo list"
     },
     {
         id: 17,

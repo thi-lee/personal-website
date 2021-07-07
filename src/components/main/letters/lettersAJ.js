@@ -1,11 +1,15 @@
 const lettersAJ =  [
     {
         id: 1,
-        letter: "A"
+        letter: "A",
+        header: "About me",
+        content: "My name is Thi Le. I'm a sophomore computer science at UNC-Chapel Hill."
     },
     {
         id: 2,
-        letter: "B"
+        letter: "B", 
+        header: "Burito",
+        content: "I love burrito"
     },
     {
         id: 3,
