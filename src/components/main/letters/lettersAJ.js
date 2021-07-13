@@ -1,19 +1,30 @@
+import React from "react";
+import { Display } from "../Display";
+
 const lettersAJ =  [
     {
         id: 1,
         letter: "A",
-        header: "About me",
-        content: "My name is Thi Le. I'm a sophomore computer science at UNC-Chapel Hill."
+        content: <Display 
+            heading="About me"
+            para="My name is Thi Le. I'm a sophomore computer sicence student at UNC-CHAPEL Hill"
+        />
     },
     {
         id: 2,
-        letter: "B", 
-        header: "Burito",
-        content: "I love burrito"
+        letter: "B",
+        content: <Display 
+            heading="Burrito"
+            para="This is a burrito"
+        />
     },
     {
         id: 3,
-        letter: "C"
+        letter: "C",
+        content: <Display 
+            heading="Contact"
+            para="thi.le@unc.edu"
+        /> 
     },
     {
         id: 4,
