@@ -4,12 +4,23 @@ function DisplayMain(props) {
     return (<div className="display">{props.content}</div>)
 }
 
-function Display(props) {
-    return (<div className="display">
-        <h1 style={{position: "sticky", top: 0, backgroundColor: "white"}}>{props.heading}<hr></hr></h1>
-        <p>{props.para}</p>
-    </div>)
+function TextHeading(props) {
+    return (
+        <h1 className="text-heading">{props.heading}</h1>
+    )
+}
+
+function Text(props) {
+    return (
+        <p className="text">{props.text}</p>
+    )
+}
+
+function Img(props) {
+    return (
+        <img src={props.src} alt={props.alt} />
+    )
 }
 
 export default DisplayMain;
-export { Display }
+export { TextHeading, Text, Img };

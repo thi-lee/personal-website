@@ -1,5 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+
+:root {
+    --roboto-mono: 'Roboto Mono', monospace;
+    --baby-blue: #C3E0E5;
+    --dark-blue: #274472;
+    --blue-gray: #5885AF;
+    --midnight-blue: #41729F;
+}
+
 * {
     box-sizing: border-box;
+}
+
+body {
+    background-color: #C3E0E5;
+    font-family: var(--roboto-mono);
+    font-weight: 400;
 }
 
 h1, p {
@@ -7,30 +24,41 @@ h1, p {
     text-align: center;
 }
 
+h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
 header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
-    height: 15vh;
+    height: 30vh;
     text-align: center;
+    line-height: 30px;
+}
+
+header h1 {
+    color: var(--dark-blue);
+    font-size: 80px;
 }
 
 .main {
     width: 100%;
     display: flex;
     flex-direction: row;
-    height: 75vh;
-    padding: 30px;
+    height: 50vh;
+    padding: 40px;
 }
 
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
+    color: var(--dark-blue);
     width: 100%;
-    height: 5vh;
-    text-align: center;
+    height: 20vh;
 }
 
 .letters {
@@ -46,21 +74,43 @@ footer {
 }
 
 .container {
-    background-color: gray;
+    background-color: var(--blue-gray);
+    color: white;
     width: 65px;
     height: 65px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-radius: 7px;
+    border-radius: 4px;
     margin: 5px;
+    cursor: pointer;
+    box-shadow: -6px 6px var(--dark-blue);
+}
+
+.container:hover {
+    background-color: var(--midnight-blue);
+    box-shadow: -3px 3px var(--dark-blue);
+    transform: translateX(-3px);
+}
+
+.container-inactive {
+    background-color: lightgray;
+    color: white;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 4px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: -3px 3px lightslategray;
 }
 
 .letter {
     font-size: 40px;
     width: 100%;
     text-align: center;
-    cursor: pointer;
 }
 
 .display {
@@ -70,4 +120,15 @@ footer {
     overflow: scroll;
     width: 100%;
     height: auto;
+}
+
+.text-heading {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+
+.text {
+    padding: 20px 50px;
+    font-weight: 300;
 }
