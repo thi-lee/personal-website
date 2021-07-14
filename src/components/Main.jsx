@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import LetterKey from "./main/LetterKey";
-import DisplayMain, { TextHeading, Text, Img } from "./main/Display";
+import DisplayMain, { TextHeading, Text } from "./main/Display";
 import firstRow from "./main/letters/firstRow";
 import secondRow from "./main/letters/secondRow";
 import lastRow from "./main/letters/lastRow";
