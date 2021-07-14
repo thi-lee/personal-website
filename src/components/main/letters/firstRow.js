@@ -1,3 +1,5 @@
+import { TextHeading, Text, Img } from "../Display";
+
 const firstRow =  [
     {
         id: 81,
@@ -48,7 +50,10 @@ const firstRow =  [
         id: 80,
         keyCode: "KeyP",
         letter: "P",
-        header: "Projects"
+        content: <div>
+            <TextHeading heading="Projects" />
+            <Text text="This is projects" /> 
+        </div>
     }
 ]
 

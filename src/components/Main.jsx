@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import LetterKey from "./main/LetterKey";
-import DisplayMain from "./main/Display";
+import DisplayMain, { TextHeading, Text, Img } from "./main/Display";
 import firstRow from "./main/letters/firstRow";
 import secondRow from "./main/letters/secondRow";
 import lastRow from "./main/letters/lastRow";
 
 function Main() {
-    const [defaultContent, setContent] = useState("Welcome!");
+    const [defaultContent, setContent] = useState(<div>
+        <TextHeading heading="Welcome!" />
+        <Text text="This is welcome page" />
+    </div>);
 
     function onClickEvent(newContent) {
         setContent(newContent)
