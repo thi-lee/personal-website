@@ -12,13 +12,15 @@ function TextHeading(props) {
 
 function Text(props) {
     return (
-        <p className="text">{props.text}</p>
+        <p className={`text ${props.className}`}
+        onClick={props.onClick}
+        >{props.text}</p>
     )
 }
 
 function Img(props) {
     return (
-        <img src={props.src} alt={props.alt} />
+        <img className={props.className} src={props.src} alt={props.alt} />
     )
 }
 

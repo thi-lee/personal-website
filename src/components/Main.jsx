@@ -8,7 +8,14 @@ import lastRow from "./main/letters/lastRow";
 function Main() {
     const [defaultContent, setContent] = useState(<div>
         <TextHeading heading="Welcome!" />
-        <Text text="This is welcome page" />
+        <Text text="I'm glad to find you here. How are you doing?" />
+        <Text text="This website is inspired by the keyboard most of us use daily.
+        Every blue letter on the left associate with a word or phrase, and when clicked,
+        the corresponding information will be on display." />
+        <Text text="Shall we start? Find 'A' and let the journey begin :) " />
+        <Text className="button" text="Navigate to A: About me" onClick={() => {
+            setContent(secondRow[0]["content"])
+        }} />
     </div>);
 
     function onClickEvent(newContent) {
