@@ -1,4 +1,4 @@
-import { TextHeading, Text, Img } from "../Display";
+import { TextHeading, Text} from "../Display";
 
 const secondRow =  [
     {
