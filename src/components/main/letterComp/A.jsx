@@ -1,9 +1,16 @@
 import React from "react";
 import { TextHeading, Text } from "../Display";
 
+// contact icons
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import MailIcon from '@material-ui/icons/Mail';
+
+// these routes contain mostly information about me
+
 function Home() {
     return (
-        <div>
+        <div className="display">
             <TextHeading heading="Welcome!" />
             <Text text="I'm glad to find you here. How are you doing?" />
             <Text text="This website is inspired by the keyboard most of us use daily.
@@ -16,7 +23,7 @@ function Home() {
 
 function A() {
     return (
-        <div>
+        <div className="display">
             <TextHeading heading="About Me" />
             <Text text="My name is Thi Le (pronounced like 'tea 🍵'), 
             and I am an incoming transfer student and a CS sophomore 
@@ -27,12 +34,60 @@ function A() {
 
 function B() {
     return (
-        <div>
+        <div className="display">
             <TextHeading heading="Burrito" />
             <Text text="When I first came to America, I didn't like burrito.
-            Eating burrito results in a big mess that I didn't want to deal with." />
+            Eating them results in a big mess that I didn't want to deal with." />
+            <Text text="However, in my third year, everyone can make me happy
+            by giving me a burrito. I love the ones with beef and rice. " />
         </div>
     )
 }
 
-export { Home, A, B };
+function C() {
+    const info = [
+        {
+            href: "https://www.linkedin.com/in/thilehy/",
+            icon: <LinkedInIcon style={{ fontSize: 50 }} />
+        },
+        {
+            href: "https://github.com/thi-lee",
+            icon: <GitHubIcon style={{ fontSize: 40 }} />
+        },
+        {
+            // when clicked, transform to the left and display email
+            href: "thi.le@unc.edu",
+            icon: <MailIcon style={{ fontSize: 50 }} />
+        }
+    ];
+    function createIcon(eachIcon) {
+        return(
+            <a
+            className="contact-icon"
+            href={eachIcon.href}
+            target="_blank"
+            rel="noreferrer">
+                {eachIcon.icon}
+            </a>
+        )
+    }
+
+    return (
+        <div className="display">
+            <TextHeading heading="Contact" />
+            <p className="text contact-icons" style={{textAlign: "center"}}>
+            {info.map(createIcon)}
+            </p>
+        </div>
+    )
+}
+
+function S() {
+    return (
+        <div className="display">
+            <TextHeading heading="Skills" />
+        </div>
+    )
+}
+
+export { Home, A, B, C, S };

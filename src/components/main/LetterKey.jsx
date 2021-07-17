@@ -3,14 +3,10 @@ import { Link } from "react-router-dom";
 
 function LetterKey(props) {
 
-    return (<div 
-        className={`${props.container}`} 
-        onClick={() => {
-            props.onClickEvent();
-        }}>
+    return (<div className={`${props.container}`} >
         <Link 
         to={props.to} 
-        className={"letter"}>
+        className="letter">
             {props.letter}
         </Link>
     </div>)

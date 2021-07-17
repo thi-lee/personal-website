@@ -17,11 +17,7 @@ const lastRow =  [
         id: 67,
         keyCode: "KeyC",
         letter: "C",
-        link: "/C",
-        content: <div>
-            <TextHeading heading="Contact" />
-            <Text text="This is contact" />
-        </div>
+        link: "/C"
     },
     {
         id: 86,

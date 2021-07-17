@@ -17,11 +17,7 @@ const secondRow =  [
         id: 83,
         keyCode: "KeyS",
         letter: "S",
-        link: "/S",
-        content: <div>
-            <TextHeading heading="Skills" />
-            <Text text="This is Skills" />
-        </div>
+        link: "/S"
     },
     {
         id: 68,

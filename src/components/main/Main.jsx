@@ -1,11 +1,12 @@
-import React, { useState } from "react";
-import LetterKey from "./main/LetterKey";
-import DisplayMain, { TextHeading, Text } from "./main/Display";
-import firstRow from "./main/letters/firstRow";
-import secondRow from "./main/letters/secondRow";
-import lastRow from "./main/letters/lastRow";
-import { Route } from "react-router-dom";
-import { Home, A, B } from "../components/main/letterComp/A";
+import React from "react";
+import { Route, Redirect } from "react-router-dom";
+
+import LetterKey from "./LetterKey";
+import { Home, A, B, C, S } from "./letterComp/A";
+
+import firstRow from "./letters/firstRow";
+import secondRow from "./letters/secondRow";
+import lastRow from "./letters/lastRow";
 
 function Main() {
     function createLetterKey(item) {
@@ -24,8 +25,11 @@ function Main() {
             <div className="letter-row">{lastRow.map(createLetterKey)}</div>
         </div>
         <Route path="/home" component={Home} />
+        <Redirect exact from="/" to="/home" />
         <Route path="/A" component={A} />
         <Route path="/B" component={B} />
+        <Route path="/C" component={C} />
+        <Route path="/S" component={S} />
     </div>)
 }
 

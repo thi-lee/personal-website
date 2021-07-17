@@ -19,6 +19,21 @@ body {
     font-weight: 400;
 }
 
+svg:hover {
+    transform: scale(1.2);
+}
+
+.contact-icon {
+    text-decoration: none;
+    color: var(--midnight-blue);
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    line-height: 50px;
+}
+
 h1, p {
     margin: 0;
     text-align: center;
