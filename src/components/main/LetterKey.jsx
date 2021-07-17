@@ -1,15 +1,18 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function LetterKey(props) {
 
     return (<div 
-        className={`${props.className}`} 
+        className={`${props.container}`} 
         onClick={() => {
             props.onClickEvent();
-        }} >
-        <p className="letter">
+        }}>
+        <Link 
+        to={props.to} 
+        className={"letter"}>
             {props.letter}
-        </p>
+        </Link>
     </div>)
 }
 

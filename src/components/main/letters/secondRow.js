@@ -1,10 +1,11 @@
-import { TextHeading, Text} from "../Display";
+import { TextHeading, Text } from "../Display";
 
 const secondRow =  [
     {
         id: 65,
         keyCode: "KeyA",
         letter: "A",
+        link: "/A",
         content:<div>
             <TextHeading heading="About Me" />
             <Text text="My name is Thi Le (pronounced like 'tea 🍵'), 
@@ -16,6 +17,7 @@ const secondRow =  [
         id: 83,
         keyCode: "KeyS",
         letter: "S",
+        link: "/S",
         content: <div>
             <TextHeading heading="Skills" />
             <Text text="This is Skills" />
@@ -24,37 +26,44 @@ const secondRow =  [
     {
         id: 68,
         keyCode: "KeyD",
-        letter: "D"
+        letter: "D",
+        link: "/"
     },
     {
         id: 70,
         keyCode: "KeyF",
-        letter: "F"
+        letter: "F",
+        link: "/"
     },
     {
         id: 71,
         keyCode: "KeyG",
-        letter: "G"
+        letter: "G",
+        link: "/"
     },
     {
         id: 72,
         keyCode: "KeyH",
-        letter: "H"
+        letter: "H",
+        link: "/"
     },
     {
         id: 74,
         keyCode: "KeyJ",
-        letter: "J"
+        letter: "J",
+        link: "/"
     },
     {
         id: 75,
         keyCode: "KeyK",
-        letter: "K"
+        letter: "K",
+        link: "/"
     },
     {
         id: 76,
         keyCode: "KeyL",
         letter: "L",
+        link: "/L",
         content: <div>
             <TextHeading heading="Learning" />
             <Text text="I am learning about life" />

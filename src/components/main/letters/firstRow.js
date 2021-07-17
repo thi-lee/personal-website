@@ -4,52 +4,62 @@ const firstRow =  [
     {
         id: 81,
         keyCode: "KeyQ",
-        letter: "Q"
+        letter: "Q",
+        link: "/"
     },
     {
         id: 87,
         keyCode: "KeyW",
-        letter: "W"
+        letter: "W",
+        link: "/"
     },
     {
         id: 69,
         keyCode: "KeyE",
-        letter: "E"
+        letter: "E",
+        link: "/"
     },
     {
         id: 82,
         keyCode: "KeyR",
-        letter: "R"
+        letter: "R",
+        link: "/"
     },
     {
         id: 84,
         keyCode: "KeyT",
-        letter: "T"
+        letter: "T",
+        link: "/"
     },
     {
         id: 89,
         keyCode: "KeyY",
-        letter: "Y"
+        letter: "Y",
+        link: "/"
     },
     {
         id: 85,
         keyCode: "KeyU",
-        letter: "U"
+        letter: "U",
+        link: "/"
     },
     {
         id: 73,
         keyCode: "KeyI",
-        letter: "I"
+        letter: "I",
+        link: "/"
     },
     {
         id: 79,
         keyCode: "KeyO",
-        letter: "O"
+        letter: "O",
+        link: "/"
     },
     {
         id: 80,
         keyCode: "KeyP",
         letter: "P",
+        link: "/P",
         content: <div>
             <TextHeading heading="Projects" />
             <Text text="This is projects" /> 

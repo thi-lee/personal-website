@@ -4,17 +4,20 @@ const lastRow =  [
     {
         id: 90,
         keyCode: "KeyZ",
-        letter: "Z"
+        letter: "Z",
+        link: "/"
     },
     {
         id: 88,
         keyCode: "KeyX",
-        letter: "X"
+        letter: "X",
+        link: "/"
     },
     {
         id: 67,
         keyCode: "KeyC",
         letter: "C",
+        link: "/C",
         content: <div>
             <TextHeading heading="Contact" />
             <Text text="This is contact" />
@@ -23,22 +26,26 @@ const lastRow =  [
     {
         id: 86,
         keyCode: "KeyV",
-        letter: "V"
+        letter: "V",
+        link: "/"
     },
     {
         id: 66,
         keyCode: "KeyB",
-        letter: "B"
+        letter: "B",
+        link: "/B"
     },
     {
         id: 78,
         keyCode: "KeyN",
-        letter: "N"
+        letter: "N",
+        link: "/"
     },
     {
         id: 77,
         keyCode: "KeyM",
         letter: "M",
+        link: "/M",
         content: <div>
             <TextHeading heading="More" />
             <Text text="This is more" />
