@@ -1,0 +1,18 @@
+img {
+    width: 80px; 
+    height: 80px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.icons-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

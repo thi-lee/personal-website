@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
 
+/*
+
+url(https://coolors.co/606c38-283618-fefae0-dda15e-bc6c25)
+
+Dark Olive Green: rgba(96, 108, 56, 1) #606C38;
+Kombu Green: rgba(40, 54, 24, 1) #283618
+Cornsilk: rgba(254, 250, 224, 1) #FEFAE0
+Fawn: rgba(221, 161, 94, 1) #DDA15E
+Liver Dogs: rgba(188, 108, 37, 1) #BC6C25
+
+*/
+
 :root {
     --roboto-mono: 'Roboto Mono', monospace;
     --baby-blue: #C3E0E5;
@@ -14,7 +26,7 @@
 }
 
 body {
-    background-color: #C3E0E5;
+    background-color: var(--baby-blue);
     font-family: var(--roboto-mono);
     font-weight: 400;
 }
@@ -23,12 +35,13 @@ svg:hover {
     transform: scale(1.2);
 }
 
-.contact-icon {
+.icon {
     text-decoration: none;
     color: var(--midnight-blue);
 }
 
-.contact-icons {
+.icons {
+    text-align: center;
     display: flex;
     flex-direction: column;
     line-height: 50px;

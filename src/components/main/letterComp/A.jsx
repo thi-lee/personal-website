@@ -6,6 +6,10 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailIcon from '@material-ui/icons/Mail';
 
+// skills icons
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faReact, faHtml5, faCss3, faNodeJs, faJs } from '@fortawesome/free-brands-svg-icons'
+
 // these routes contain mostly information about me
 
 function Home() {
@@ -63,7 +67,7 @@ function C() {
     function createIcon(eachIcon) {
         return(
             <a
-            className="contact-icon"
+            className="icon"
             href={eachIcon.href}
             target="_blank"
             rel="noreferrer">
@@ -75,19 +79,11 @@ function C() {
     return (
         <div className="display">
             <TextHeading heading="Contact" />
-            <p className="text contact-icons" style={{textAlign: "center"}}>
+            <p className="text icons" style={{textAlign: "center"}}>
             {info.map(createIcon)}
             </p>
         </div>
     )
 }
 
-function S() {
-    return (
-        <div className="display">
-            <TextHeading heading="Skills" />
-        </div>
-    )
-}
-
-export { Home, A, B, C, S };
+export { Home, A, B, C };
