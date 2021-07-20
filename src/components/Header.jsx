@@ -10,7 +10,7 @@ function Header() {
                 the corresponding information will be on display.
             </p>
             <p>
-                Let's <a className="dive-in" href="#">dive in</a> :)
+                Let's <a className="dive-in" href="/#/A">dive in</a> :)
             </p>
         </div>
     </header>

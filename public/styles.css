@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
 
 /*
 
@@ -104,7 +103,6 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* height: 60vh; */
     padding: 30px;
     background-color: var(--gold-crayola);
 }
@@ -133,6 +131,7 @@ footer {
 
 .container {
     background-color: var(--dark-olive-green);
+    color: var(--fawn);
     color: white;
     width: 70px;
     height: 70px;
@@ -142,17 +141,14 @@ footer {
     border-radius: 4px;
     margin: 5px;
     cursor: pointer;
-    /* box-shadow: -6px 6px var(--dark-blue); */
 }
 
 .container:hover {
     background-color: var(--kombu-green);
-    /* box-shadow: -3px 3px var(--dark-blue); */
-    /* transform: translateX(-3px); */
+    color: var(--fawn);
 }
 
 .container-inactive {
-    /* background-color: lightgray; */
     color: white;
     width: 70px;
     height: 70px;
@@ -174,6 +170,10 @@ footer {
     font-family: var(--roboto-mono);
 }
 
+.container .letter:hover {
+    color: var(--fawn);
+}
+
 .display {
     margin-top: 50px;
     align-items: center;
@@ -181,7 +181,6 @@ footer {
     padding: 0 10px;
     overflow-y: scroll;
     width: 100%;
-    /* height: auto; */
 }
 
 .text-heading {
@@ -195,22 +194,4 @@ footer {
     padding: 20px 50px;
     font-weight: 300;
     text-align: justify;
-}
-
-/* .button {
-    cursor: pointer;
-    padding: 10px 20px;
-    text-align: center;
-    margin: 0 150px;
-    border: 0.5px solid black;
-    border-radius: 6px;
-} */
-
-/* .button:hover {
-    border: 1px dashed var(--dark-blue);
-    color: var(--dark-blue);
-} */
-
-.profile-image {
-    text-align: center;
 }
