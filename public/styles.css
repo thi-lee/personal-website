@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
 
 /*
 
@@ -8,17 +9,19 @@ url(https://coolors.co/606c38-283618-fefae0-dda15e-bc6c25)
 Dark Olive Green: rgba(96, 108, 56, 1) #606C38;
 Kombu Green: rgba(40, 54, 24, 1) #283618
 Cornsilk: rgba(254, 250, 224, 1) #FEFAE0
+Deep Champagne: rgba(238, 206, 159, 1) #EECE9F
 Fawn: rgba(221, 161, 94, 1) #DDA15E
-Liver Dogs: rgba(188, 108, 37, 1) #BC6C25
 
 */
 
 :root {
     --roboto-mono: 'Roboto Mono', monospace;
-    --baby-blue: #C3E0E5;
-    --dark-blue: #274472;
-    --blue-gray: #5885AF;
-    --midnight-blue: #41729F;
+    --dark-olive-green: #606C38;
+    --kombu-green: #283618;
+    --cornsilk: #FEFAE0;
+    --deep-champagne: #EECE9F;
+    --fawn: #DDA15E;
+    --gold-crayola: #e6b87f;
 }
 
 * {
@@ -26,7 +29,7 @@ Liver Dogs: rgba(188, 108, 37, 1) #BC6C25
 }
 
 body {
-    background-color: var(--baby-blue);
+    background-color: var(--kombu-green);
     font-family: var(--roboto-mono);
     font-weight: 400;
 }
@@ -37,7 +40,7 @@ a:hover {
 
 .icon {
     text-decoration: none;
-    color: var(--midnight-blue);
+    color: var(--cornsilk);
 }
 
 .icons {
@@ -63,36 +66,56 @@ h1 {
     font-family: 'Dancing Script', cursive;
 }
 
+.navigation {
+    font-weight: 300;
+    width: 80%;
+    width: 650px;
+    color: white;
+}
+
 header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 25vh;
+    height: 100vh;
     line-height: 30px;
+    background-color: var(--kombu-green);
+    margin: 0;
 }
 
 header h1 {
-    color: var(--dark-blue);
+    color: var(--fawn);
     font-size: 80px;
+    padding: 40px;
+}
+
+.dive-in {
+    text-decoration: none;
+    color: var(--fawn);
+    border-bottom: 1px dashed var(--fawn);
 }
 
 .main {
+    height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    height: 60vh;
-    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 60vh; */
+    padding: 30px;
+    background-color: var(--gold-crayola);
 }
 
 footer {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    color: var(--dark-blue);
+    color: var(--fawn);
     width: 100%;
-    height: 10vh;
+    height: 40px;
 }
 
 .letters {
@@ -109,61 +132,63 @@ footer {
 }
 
 .container {
-    background-color: var(--blue-gray);
+    background-color: var(--dark-olive-green);
     color: white;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
     border-radius: 4px;
     margin: 5px;
     cursor: pointer;
-    box-shadow: -6px 6px var(--dark-blue);
+    /* box-shadow: -6px 6px var(--dark-blue); */
 }
 
 .container:hover {
-    background-color: var(--midnight-blue);
-    box-shadow: -3px 3px var(--dark-blue);
-    transform: translateX(-3px);
+    background-color: var(--kombu-green);
+    /* box-shadow: -3px 3px var(--dark-blue); */
+    /* transform: translateX(-3px); */
 }
 
 .container-inactive {
-    background-color: lightgray;
+    /* background-color: lightgray; */
     color: white;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
     border-radius: 4px;
     margin: 5px;
-    box-shadow: -3px 3px lightslategray;
+    /* box-shadow: -3px 3px lightslategray; */
+    border: 2px dashed var(--kombu-green)
 }
 
 .letter {
     font-size: 40px;
     width: 100%;
     text-align: center;
-    color: white;
+    color: var(--kombu-green);
     text-decoration: none;
     font-family: var(--roboto-mono);
 }
 
 .display {
+    margin-top: 50px;
     align-items: center;
     line-height: 25px;
     padding: 0 10px;
     overflow-y: scroll;
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 .text-heading {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 50px;
-    color: var(--dark-blue)
+    color: var(--kombu-green)
 }
 
 .text {
@@ -172,19 +197,19 @@ footer {
     text-align: justify;
 }
 
-.button {
+/* .button {
     cursor: pointer;
     padding: 10px 20px;
     text-align: center;
     margin: 0 150px;
     border: 0.5px solid black;
     border-radius: 6px;
-}
+} */
 
-.button:hover {
+/* .button:hover {
     border: 1px dashed var(--dark-blue);
     color: var(--dark-blue);
-}
+} */
 
 .profile-image {
     text-align: center;

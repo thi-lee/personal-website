@@ -1,19 +1,6 @@
 import React from "react";
 import { TextHeading, Text } from "../Display";
 
-function Home() {
-    return (
-        <div className="display">
-            <TextHeading heading="Welcome!" />
-            <Text text="I'm glad to find you here. How are you doing?" />
-            <Text text="This website is inspired by the keyboard most of us use daily.
-            Every blue letter on the left associate with a word or phrase, and when clicked,
-            the corresponding information will be on display." />
-            <Text text="Shall we start? Find 'A' and let the journey begin :) " />
-        </div>
-    )
-}
-
 function A() {
     return (
         <div className="display">
@@ -25,4 +12,4 @@ function A() {
     )
 }
 
-export { Home, A };
+export { A };

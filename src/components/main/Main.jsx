@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Redirect, Switch } from "react-router-dom";
 
 import LetterKey from "./LetterKey";
-import { Home, A } from "./letterComp/A";
+import { A } from "./letterComp/A";
 import B from "./letterComp/B";
 import C from "./letterComp/C";
 import S from "./letterComp/S";
@@ -28,7 +28,7 @@ function Main() {
             <div className="letter-row">{lastRow.map(createLetterKey)}</div>
         </div>
         <Switch>
-            <Route exact path="/home" component={Home} />
+            {/* <Route exact path="/home" component={Home} /> */}
             <Redirect exact from="/" to="/home" />
             <Route exact path="/A" component={A} />
             <Route exact path="/B" component={B} />
