@@ -2,8 +2,10 @@ import React from "react";
 import { Route, Redirect } from "react-router-dom";
 
 import LetterKey from "./LetterKey";
-import { Home, A, B, C } from "./letterComp/A";
-import S from "./letterComp/S"
+import { Home, A } from "./letterComp/A";
+import B from "./letterComp/B";
+import C from "./letterComp/C";
+import S from "./letterComp/S";
 
 import firstRow from "./letters/firstRow";
 import secondRow from "./letters/secondRow";

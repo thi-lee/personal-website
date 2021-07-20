@@ -8,7 +8,7 @@ function TextHeading(props) {
 
 function Text(props) {
     return (
-        <p className="text">{props.text}</p>
+        <p className={`text ${props.className}`}>{props.text}</p>
     )
 }
 

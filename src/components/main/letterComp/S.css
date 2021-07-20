@@ -1,3 +1,23 @@
+.category-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.category-text:before, h1:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+.category-text:before {
+    margin-right: 10px
+}
+
+.category-text:after {
+    margin-left: 10px
+}
+
 img {
     width: 80px; 
     height: 80px;
@@ -10,9 +30,6 @@ img:hover {
     transform: scale(1.2);
 }
 
-.icons-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+.skills-icon {
+    margin: 10px 35px;
 }

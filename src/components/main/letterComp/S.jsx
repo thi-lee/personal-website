@@ -1,35 +1,25 @@
 import React from "react";
 import { TextHeading, Text } from "../Display";
+import { createLogos } from "./logos";
 import "./S.css";
-
-function LogoComp(props) {
-    return (
-        <div className="icon">
-            <img src={props.src} alt={props.alt} />
-        </div>
-    )
-}
-
-function createLogos(logo) {
-    return (
-        <LogoComp src={logo.src} alt={logo.alt} />
-    )
-}
 
 function logos() {
     const frontend = [
         {
-            name: "",
+            id: 1,
+            name: "HTML5",
             src: "svg_logos/frontend-html5.svg",
-            alt: "html"
+            alt: "html5"
         },
         {
-            name: "",
+            id: 2,
+            name: "Javascript",
             src: "svg_logos/frontend-javascript.svg",
             alt: "js"
         },
         {
-            name: "",
+            id: 3,
+            name: "React",
             src: "svg_logos/frontend-react.svg",
             alt: "react"
         }
@@ -37,17 +27,20 @@ function logos() {
 
     const backend = [
         {
-            name: "",
+            id: 1,
+            name: "NodeJS",
             src: "svg_logos/backend-nodejs.svg",
             alt: "nodejs"
         },
         {
-            name: "",
+            id: 2,
+            name: "ExpressJS",
             src: "svg_logos/backend-expressjs.svg",
             alt: "expressjs"
         },
         {
-            name: "",
+            id: 3,
+            name: "MongoDB",
             src: "svg_logos/backend-mongo.svg",
             alt: "mongodb"
         }
@@ -55,27 +48,32 @@ function logos() {
 
     const others = [
         {
-            name: "",
+            id: 1,
+            name: "Git",
             src: "svg_logos/others-git.svg",
             alt: "git"
         },
         {
-            name: "",
+            id: 2,
+            name: "npm",
             src: "svg_logos/others-npm.svg",
             alt: "npm"
         },
         {
-            name: "",
+            id: 3,
+            name: "webpack",
             src: "svg_logos/others-webpack.svg",
             alt: "webpack"
         },
         {
-            name: "",
+            id: 4,
+            name: "Netlify",
             src: "svg_logos/others-netlify.svg",
             alt: "netlify"
         },
         {
-            name: "",
+            id: 5,
+            name: "Heroku",
             src: "svg_logos/others-heroku.svg",
             alt: "heroku"
         }
@@ -89,22 +87,16 @@ function S() {
         <div className="display">
             <TextHeading heading="Skills" />
             <div className="category">
-                <Text text="Front-end" />
-                <div className="icons-row">
-                    {logos().frontend.map(createLogos)}
-                </div>
+                <Text className="category-text" text="Front-end" />
+                <div className="icons-row">{logos().frontend.map(createLogos)}</div>
             </div>
             <div className="category">
-                <Text text="Back-end" />
-                <div className="icons-row">
-                    {logos().backend.map(createLogos)}
-                </div>
+                <Text className="category-text" text="Back-end" />
+                <div className="icons-row">{logos().backend.map(createLogos)}</div>
             </div>
             <div className="category">
-                <Text text="Others" />
-                <div className="icons-row">
-                    {logos().others.map(createLogos)}
-                </div>
+                <Text className="category-text" text="Others" />
+                <div className="icons-row">{logos().others.map(createLogos)}</div>
             </div>
         </div>
     )
