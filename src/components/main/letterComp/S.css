@@ -26,9 +26,9 @@ img {
     cursor: pointer;
 }
 
-img:hover {
+/* .skill-icon:hover {
     transform: scale(1.2);
-}
+} */
 
 .skills-icon {
     margin: 10px 35px;
