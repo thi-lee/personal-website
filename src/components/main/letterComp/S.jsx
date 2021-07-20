@@ -74,7 +74,7 @@ function logos() {
         {
             id: 5,
             name: "Heroku",
-            src: "svg_logos/others-heroku.svg",
+            src: "svg_logos/others-heroku.svg",
             alt: "heroku"
         }
     ]

@@ -26,10 +26,7 @@ img {
     cursor: pointer;
 }
 
-/* .skill-icon:hover {
-    transform: scale(1.2);
-} */
-
 .skills-icon {
     margin: 10px 35px;
+    text-align: center;
 }

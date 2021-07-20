@@ -1,16 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 
 function LogoComp(props) {
+    const [isMousedOver, setMouseState] = useState(false)
+    function mouseOver() {
+        setMouseState(true);
+    }
+    function mouseLeave() {
+        setMouseState(false);
+    }
     return (
         <div className="skills-icon">
-            <img src={props.src} alt={props.alt} />
+            <img 
+            src={props.src} 
+            alt={props.alt} 
+            onMouseEnter={mouseOver} 
+            onMouseLeave={mouseLeave} />
+            <p style={{visibility: isMousedOver ? "visible" : "hidden"}} >{props.name}</p>
         </div>
     )
 }
 
 function createLogos(logo) {
     return (
-        <LogoComp key={logo.id} src={logo.src} alt={logo.alt} />
+        <LogoComp key={logo.id} name={logo.name} src={logo.src} alt={logo.alt} />
     )
 }
 
