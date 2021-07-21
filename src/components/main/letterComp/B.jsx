@@ -3,7 +3,7 @@ import { TextHeading, Text } from "../Display";
 
 function B() {
     return (
-        <div className="display">
+        <div className="display" id={"display"}>
             <TextHeading heading="Burrito" />
             <Text text="When I first came to America, I didn't like burrito.
             Eating them results in a big mess that I didn't want to deal with." />

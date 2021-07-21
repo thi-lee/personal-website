@@ -13,6 +13,12 @@ Fawn: rgba(221, 161, 94, 1) #DDA15E
 
 */
 
+/* 
+
+https://coolors.co/573723-575b4d-6c7e76-e6f0f1-9f7c5e 
+
+*/
+
 :root {
     --roboto-mono: 'Roboto Mono', monospace;
     --dark-olive-green: #606C38;
@@ -120,7 +126,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     background-color: var(--kombu-green);
-    padding: 40px 0;
+    padding: 40px 0 10px 0;
 }
 
 .letter-row {
@@ -141,11 +147,6 @@ footer {
     border-radius: 4px;
     margin: 5px;
     cursor: pointer;
-}
-
-.container:hover {
-    background-color: var(--kombu-green);
-    color: var(--fawn);
 }
 
 .container-inactive {
@@ -172,10 +173,6 @@ footer {
 
 .container .letter {
     color : var(--kombu-green)
-}
-
-.container .letter:hover {
-    color: var(--fawn);
 }
 
 .display {

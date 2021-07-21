@@ -21,7 +21,7 @@ function C() {
     ];
 
     return (
-        <div className="display">
+        <div className="display" id={"display"}>
             <TextHeading heading="Contact" />
             <div className="text icons" style={{margin: "20px 100px"}}>
             {info.map(createLogosContact)}

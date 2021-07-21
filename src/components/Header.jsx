@@ -5,7 +5,7 @@ function Header() {
     return <header>
         <h1>Thi Le</h1>
         <p></p>
-        <div className="navigation">
+        <div className="navigation" id={"header"}>
             <p>This personal website is inspired by the keyboard most of us use daily.</p>
             <p>Every green letter below associates with a word or phrase,</p>
             <p>and when clicked, the corresponding information will be on display.

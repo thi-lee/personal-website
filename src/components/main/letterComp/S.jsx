@@ -84,7 +84,7 @@ function logos() {
 
 function S() {
     return (
-        <div className="display">
+        <div className="display" id={"display"}>
             <TextHeading heading="Skills" />
             <div className="category">
                 <Text className="category-text" text="Front-end" />

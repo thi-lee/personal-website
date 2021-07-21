@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import { A } from "./letterComp/A";
+import A from "./letterComp/A";
 import B from "./letterComp/B";
 import C from "./letterComp/C";
 import S from "./letterComp/S";
