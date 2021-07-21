@@ -1,10 +1,9 @@
 import React from "react";
-
 import LetterKey from "./LetterKey";
-
 import firstRow from "./letters/firstRow";
 import secondRow from "./letters/secondRow";
 import lastRow from "./letters/lastRow";
+// import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 
 function Keyboard() {
     function createLetterKey(item) {
@@ -21,6 +20,7 @@ function Keyboard() {
             <div className="letter-row">{firstRow.map(createLetterKey)}</div>
             <div className="letter-row">{secondRow.map(createLetterKey)}</div>
             <div className="letter-row">{lastRow.map(createLetterKey)}</div>
+            {/* <KeyboardArrowDownIcon /> */}
         </div>)
 }
 

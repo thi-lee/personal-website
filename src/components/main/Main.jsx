@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Redirect, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 
 import { A } from "./letterComp/A";
 import B from "./letterComp/B";
@@ -9,16 +9,14 @@ import S from "./letterComp/S";
 
 function Main() {
 
-    return (<div className="main">
+    return (
         <Switch>
-            {/* <Route exact path="/home" component={Home} /> */}
-            <Redirect exact from="/" to="/home" />
             <Route exact path="/A" component={A} />
             <Route exact path="/B" component={B} />
             <Route exact path="/C" component={C} />
             <Route exact path="/S" component={S} />
         </Switch>
-    </div>)
+    )
 }
 
 export default Main;
