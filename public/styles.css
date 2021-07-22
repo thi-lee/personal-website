@@ -65,6 +65,7 @@ a:hover {
 h1, p {
     margin: 0;
     text-align: center;
+    font-size: 120%;
 }
 
 h1 {
@@ -74,7 +75,7 @@ h1 {
 .navigation {
     font-weight: 300;
     /* width: 80%; */
-    width: 700px;
+    width: 90%;
     color: white;
 }
 
@@ -105,11 +106,11 @@ header p {
 .header-logo {
     text-decoration: none;
     color: var(--kombu-green);
-    margin: 10px;
+    margin: 0 10px;
 }
 
 .header-logo:hover {
-    color: var(--dark-olive-green);
+    transform: scale(1.2);
 }
 
 .dive-in {
@@ -168,7 +169,6 @@ footer {
     align-items: center;
     border-radius: 4px;
     margin: 5px;
-    /* box-shadow: -3px 3px lightslategray; */
     border: 2px dashed var(--fawn)
 }
 
@@ -193,14 +193,48 @@ footer {
 
 .display {
     margin-top: 30px;
-    align-items: center;
+    /* align-items: center; */
     line-height: 25px;
-    padding: 40px 300px;
+    padding: 40px 20%;
     overflow-y: scroll;
     width: 100%;
     height: 90vh;
     background-color: var(--gold-crayola);
     border: 2px dashed var(--kombu-green);
+    text-align: center;
+}
+
+@media screen and (max-width:375px) {
+
+    p {
+        text-align: left;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    .keyboard {
+        padding: 20px 0 0 0;
+    }
+
+    .display {
+        padding: 40px 0;
+    }
+
+    .container {
+        width: 25px;
+        height: 25px;
+    }
+
+    .container-inactive {
+        width: 25px;
+        height: 25px;
+    }
+
+    .letter {
+        font-size: 15px;
+    }
 }
 
 .text-heading {

@@ -3,7 +3,7 @@ import { TextHeading } from "../Display";
 import "./S.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJs, faNodeJs, faReact, faGitAlt, faNpm, faBootstrap } from '@fortawesome/free-brands-svg-icons';
+import { faJs, faNodeJs, faReact, faGitAlt, faNpm, faBootstrap, faAngular } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 function Logo(props) {
@@ -41,38 +41,50 @@ function S() {
 
     const logos = [
         {
+            id: 1,
             fa: faCode,
             name: "HTML5/CSS",
             detail: "self taught"
         },
         {
+            id: 2,
             fa: faJs,
             name: "Javascript"
         },
         {
-            fa: faNodeJs,
-            name: "NodeJS"
-        },
-        {
+            id: 3,
             fa: faReact,
             name: "React"
         },
         {
+            id: 4,
+            fa: faAngular,
+            name: "Angular"
+        },
+        {
+            id: 5,
+            fa: faNodeJs,
+            name: "NodeJS"
+        },
+        {
+            id: 6,
             fa: faGitAlt,
             name: "Git"
         },
         {
+            id: 7,
             fa: faNpm,
             name: "npm"
         },
         {
+            id: 8,
             fa: faBootstrap,
             name: "BootStrap"
         }
     ]
 
     function createLogo(logo) {
-        return <Logo fa={logo.fa} name={logo.name} />
+        return <Logo key={logo.id} fa={logo.fa} name={logo.name} />
     }
 
     return (
