@@ -1,5 +1,3 @@
-import { TextHeading, Text } from "../Display";
-
 const lastRow =  [
     {
         id: 90,
@@ -17,7 +15,7 @@ const lastRow =  [
         id: 67,
         keyCode: "KeyC",
         letter: "C",
-        link: "/C"
+        link: "/"
     },
     {
         id: 86,
@@ -41,11 +39,7 @@ const lastRow =  [
         id: 77,
         keyCode: "KeyM",
         letter: "M",
-        link: "/M",
-        content: <div>
-            <TextHeading heading="More" />
-            <Text text="This is more" />
-        </div>
+        link: "/"
     }
 ]
 

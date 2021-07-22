@@ -11,8 +11,12 @@ function Keyboard() {
         return <LetterKey 
             key={item.id}
             letter={item.letter}
-            container={(item.link !== "/") ? "container" : "container-inactive"}
-            to={`${item.link}`}
+            container={
+                (item.link !== "/") 
+                ? "container" 
+                : "container-inactive"
+            }
+            to={item.link}
         />
     }
 
@@ -22,14 +26,8 @@ function Keyboard() {
             <div className="letter-row">{secondRow.map(createLetterKey)}</div>
             <div className="letter-row">{lastRow.map(createLetterKey)}</div>
             <ScrollIntoView selector="#display">
-                <KeyboardArrowDownIcon 
-                style={{
-                    color: "#DDA15E",
-                    width: "100%",
-                    fontSize: "70px",
-                    padding: "0",
-                    cursor: "pointer"
-                }} />
+                <KeyboardArrowDownIcon className="arrow-icon" 
+                style={{ width: "100%", fontSize: "70px", }}/>
             </ScrollIntoView>
         </div>)
 }

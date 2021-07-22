@@ -1,105 +1,94 @@
-import React from "react";
-import { TextHeading, Text } from "../Display";
-import { createLogos } from "./logos";
+import React, { useState } from "react";
+import { TextHeading } from "../Display";
 import "./S.css";
 
-function logos() {
-    const frontend = [
-        {
-            id: 1,
-            name: "HTML5",
-            src: "svg_logos/frontend-html5.svg",
-            alt: "html5"
-        },
-        {
-            id: 2,
-            name: "Javascript",
-            src: "svg_logos/frontend-javascript.svg",
-            alt: "js"
-        },
-        {
-            id: 3,
-            name: "React",
-            src: "svg_logos/frontend-react.svg",
-            alt: "react"
-        }
-    ];
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faJs, faNodeJs, faReact, faGitAlt, faNpm, faBootstrap } from '@fortawesome/free-brands-svg-icons';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 
-    const backend = [
-        {
-            id: 1,
-            name: "NodeJS",
-            src: "svg_logos/backend-nodejs.svg",
-            alt: "nodejs"
-        },
-        {
-            id: 2,
-            name: "ExpressJS",
-            src: "svg_logos/backend-expressjs.svg",
-            alt: "expressjs"
-        },
-        {
-            id: 3,
-            name: "MongoDB",
-            src: "svg_logos/backend-mongo.svg",
-            alt: "mongodb"
-        }
-    ];
+function Logo(props) {
 
-    const others = [
-        {
-            id: 1,
-            name: "Git",
-            src: "svg_logos/others-git.svg",
-            alt: "git"
-        },
-        {
-            id: 2,
-            name: "npm",
-            src: "svg_logos/others-npm.svg",
-            alt: "npm"
-        },
-        {
-            id: 3,
-            name: "webpack",
-            src: "svg_logos/others-webpack.svg",
-            alt: "webpack"
-        },
-        {
-            id: 4,
-            name: "Netlify",
-            src: "svg_logos/others-netlify.svg",
-            alt: "netlify"
-        },
-        {
-            id: 5,
-            name: "Heroku",
-            src: "svg_logos/others-heroku.svg",
-            alt: "heroku"
-        }
-    ]
+    const [ mouseEnter, setMouseEnter ] = useState(false);
 
-    return { frontend, backend, others };
+    function detectMouseEnter() {
+        setMouseEnter(true);
+    }
+    function detectMouseLeave() {
+        setMouseEnter(false);
+    }
+
+    return (
+        <div 
+        style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100px",
+            margin: "20px 40px 0px 40px",
+            cursor: "pointer"
+        }}
+        onMouseEnter={detectMouseEnter}
+        onMouseLeave={detectMouseLeave}
+        >
+            <FontAwesomeIcon icon={props.fa} size="6x" />
+            <p style={{marginTop: "10px", visibility: mouseEnter ? "visible" : "hidden"}}>{props.name}</p>
+        </div>
+    )
 }
 
 function S() {
+
+    const logos = [
+        {
+            fa: faCode,
+            name: "HTML5/CSS",
+            detail: "self taught"
+        },
+        {
+            fa: faJs,
+            name: "Javascript"
+        },
+        {
+            fa: faNodeJs,
+            name: "NodeJS"
+        },
+        {
+            fa: faReact,
+            name: "React"
+        },
+        {
+            fa: faGitAlt,
+            name: "Git"
+        },
+        {
+            fa: faNpm,
+            name: "npm"
+        },
+        {
+            fa: faBootstrap,
+            name: "BootStrap"
+        }
+    ]
+
+    function createLogo(logo) {
+        return <Logo fa={logo.fa} name={logo.name} />
+    }
+
     return (
-        <div className="display" id={"display"}>
-            <TextHeading heading="Skills" />
-            <div className="category">
-                <Text className="category-text" text="Front-end" />
-                <div className="icons-row">{logos().frontend.map(createLogos)}</div>
-            </div>
-            <div className="category">
-                <Text className="category-text" text="Back-end" />
-                <div className="icons-row">{logos().backend.map(createLogos)}</div>
-            </div>
-            <div className="category">
-                <Text className="category-text" text="Others" />
-                <div className="icons-row">{logos().others.map(createLogos)}</div>
-            </div>
+    <div className="display" id={"display"}>
+        <TextHeading heading="Skills" />
+        <div style={{
+            display: "flex", 
+            flexDirection: "row", 
+            flexWrap: "wrap", 
+            justifyContent: "center", 
+            height: "80%",
+            color: "#283618"
+        }}>
+        {logos.map(createLogo)}
         </div>
-    )
+    </div>)
 }
 
 export default S;
