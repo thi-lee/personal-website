@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
-import { TextHeading, Text } from "./Display";
+import { TextHeading, Text } from "./letters/DisplayComps";
 
-import A from "./letterComp/A";
-import B from "./letterComp/B";
-import S from "./letterComp/S";
+import A from "../routes/A";
+import B from "../routes/B";
+import S from "../routes/S";
 
 function Main() {
     function Home() {

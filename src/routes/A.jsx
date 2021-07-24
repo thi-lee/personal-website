@@ -1,5 +1,5 @@
 import React from "react";
-import { TextHeading, Text } from "../Display";
+import { TextHeading, Text } from "../components/letters/DisplayComps";
 
 function A() {
     return (

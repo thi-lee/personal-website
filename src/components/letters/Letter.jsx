@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function LetterKey(props) {
+function Letter(props) {
     function activeKey() {
         return <Link to={props.to} className="letter">{props.letter}</Link>
     }
@@ -17,4 +17,4 @@ function LetterKey(props) {
     )
 }
 
-export default LetterKey;
+export default Letter;

@@ -81,7 +81,7 @@ h1 {
 
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -93,10 +93,31 @@ header {
     border: 2px dashed var(--kombu-green);
 }
 
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 230px;
+    height: 230px;
+    transform: rotate(-3deg);
+    margin: 40px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 630px) {
+    header {
+        flex-direction: column;
+    }
+}
+
 header h1 {
     color: var(--kombu-green);
     font-size: 80px;
-    padding: 40px;
+    padding: 40px 0;
 }
 
 header p {

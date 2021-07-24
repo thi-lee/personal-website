@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
-import Keyboard from "./main/Keyboard";
-import Main from "./main/Main"
+import Keyboard from "./Keyboard";
+import Main from "./Main"
 import Footer from "./Footer";
 
 

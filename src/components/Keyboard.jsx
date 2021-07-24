@@ -1,12 +1,12 @@
 import React from "react";
-import LetterKey from "./LetterKey";
-import firstRow from "./letters/firstRow";
-import secondRow from "./letters/secondRow";
-import lastRow from "./letters/lastRow";
+import Letter from "./letters/Letter";
+import firstRow from "./letters/letters/firstRow";
+import secondRow from "./letters/letters/secondRow";
+import lastRow from "./letters/letters/lastRow";
 
 function Keyboard() {
     function createLetterKey(item) {
-        return(<LetterKey 
+        return(<Letter 
                 key={item.id}
                 letter={item.letter}
                 container={
