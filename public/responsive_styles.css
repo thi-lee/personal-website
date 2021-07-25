@@ -25,7 +25,7 @@
 
     header h1 {
         font-family: 'Dancing Script', cursive;
-        font-size: 100px;
+        font-size: 80px;
         padding: 20px 0;
     }
 
@@ -48,5 +48,11 @@
 
     .letter {
         font-size: 30px;
+    }
+}
+
+@media screen and (min-height: 812px) {
+    .profile-photo {
+        margin: 20%;
     }
 }
