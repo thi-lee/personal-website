@@ -1,6 +1,8 @@
 @media screen and (max-width: 630px) {
     header {
+        text-align: center;
         flex-direction: column;
+        padding: 0;
     }
 }
 
@@ -12,6 +14,19 @@
 
     header {
         padding: 20px;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 170px;
+        height: auto;
+        margin: 20px;
+    }
+
+    header h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 100px;
+        padding: 20px 0;
     }
 
     .keyboard {
