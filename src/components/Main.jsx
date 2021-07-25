@@ -10,9 +10,9 @@ function Main() {
     function Home() {
         return <div className="display" id={"display"}>
             <TextHeading heading="Welcome!" />
-            <Text text="This personal website is inspired by the keyboard most of us use daily." />
-            <Text text="Every green letter below associates with a word or phrase," />
-            <Text text="and when clicked, the corresponding information will be on display." />
+            <Text text="This personal website is inspired by the keyboard most of us use daily.
+            Every light-colored letter above associates with a word or phrase,
+            and when they are clicked, the corresponding information will be on display." />
         </div>
     }
     

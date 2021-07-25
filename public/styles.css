@@ -1,32 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
-
-/*
-
-url(https://coolors.co/606c38-283618-fefae0-dda15e-bc6c25)
-
-Dark Olive Green: rgba(96, 108, 56, 1) #606C38;
-Kombu Green: rgba(40, 54, 24, 1) #283618
-Cornsilk: rgba(254, 250, 224, 1) #FEFAE0
-Deep Champagne: rgba(238, 206, 159, 1) #EECE9F
-Fawn: rgba(221, 161, 94, 1) #DDA15E
-
-*/
-
-/* 
-
-https://coolors.co/573723-575b4d-6c7e76-e6f0f1-9f7c5e 
-
-*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 :root {
     --roboto-mono: 'Roboto Mono', monospace;
-    --dark-olive-green: #606C38;
-    --kombu-green: #283618;
-    --cornsilk: #FEFAE0;
-    --deep-champagne: #EECE9F;
-    --fawn: #DDA15E;
-    --gold-crayola: #e6b87f;
+    
+    --lightest: #FDFDFF;
+    --darkest: #393D3F;
+    --mid: #62929E;
 }
 
 * {
@@ -34,7 +15,7 @@ https://coolors.co/573723-575b4d-6c7e76-e6f0f1-9f7c5e
 }
 
 body {
-    background-color: var(--gold-crayola);
+    background-color: var(--lightest);
     font-family: var(--roboto-mono);
     font-weight: 400;
 }
@@ -43,9 +24,10 @@ a:hover {
     transform: scale(1.2);
 }
 
+/* ??? */
 .icon {
     text-decoration: none;
-    color: var(--cornsilk);
+    color: var(--darkest);
 }
 
 .icons {
@@ -66,31 +48,31 @@ h1, p {
     margin: 0;
     text-align: center;
     font-size: 120%;
+    font-family: 'Fira Sans', sans-serif;
 }
 
-h1 {
-    font-family: 'Dancing Script', cursive;
+p {
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .navigation {
     font-weight: 300;
-    /* width: 80%; */
     width: 90%;
-    color: white;
+    color: var(--darkest);
 }
 
 header {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     height: 98vh;
     line-height: 30px;
-    background-color: var(--gold-crayola);
     margin-bottom: 30px;
     text-align: justify;
-    border: 2px dashed var(--kombu-green);
+    border: 2px solid var(--mid);
+    color: var(--mid);
 }
 
 .header-text {
@@ -104,29 +86,19 @@ header {
     width: 230px;
     height: 230px;
     transform: rotate(-3deg);
-    margin: 40px;
+    margin: 60px;
     border-radius: 5px;
 }
 
-@media screen and (max-width: 630px) {
-    header {
-        flex-direction: column;
-    }
-}
-
 header h1 {
-    color: var(--kombu-green);
-    font-size: 80px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
     padding: 40px 0;
-}
-
-header p {
-    color: var(--kombu-green)
 }
 
 .header-logo {
     text-decoration: none;
-    color: var(--kombu-green);
+    color: var(--darkest);
     margin: 0 10px;
 }
 
@@ -134,23 +106,19 @@ header p {
     transform: scale(1.2);
 }
 
-.dive-in {
-    text-decoration: none;
-    color: var(--kombu-green);
-    font-weight: bold;
-    cursor: pointer;
-    width: 100%;
-}
-
-.dive-in:hover {
+.arrow-icon:hover {
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 footer {
-    color: var(--fawn);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--darkest);
     width: 100%;
     padding: 10px 0;
-    background-color: var(--kombu-green);
     margin-top: 30px;
 }
 
@@ -159,8 +127,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--kombu-green);
-    padding: 40px 0 40px 0;
+    background-color: var(--mid);
+    padding: 20px 0 20px 0;
 }
 
 .letter-row {
@@ -169,53 +137,40 @@ footer {
     justify-content: center;
 }
 
-.container {
-    background-color: var(--fawn);
-    color: var(--kombu-green);
-    color: white;
+.container, .container-inactive {
     width: 70px;
     height: 70px;
+    border-radius: 4px;
+    margin: 5px;
+    color: white;
+}
+
+.container {
+    background-color: var(--lightest);
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-radius: 4px;
-    margin: 5px;
     cursor: pointer;
 }
 
+.container .letter {
+    color : var(--darkest)
+}
+
 .container-inactive {
-    color: white;
-    width: 70px;
-    height: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-radius: 4px;
-    margin: 5px;
-    border: 2px dashed var(--fawn)
+    border: 2px dashed var(--lightest);
+    color: var(--lightest);
 }
 
 .letter {
     font-size: 40px;
     width: 100%;
     text-align: center;
-    color: var(--fawn);
     text-decoration: none;
     font-family: var(--roboto-mono);
-}
-
-.container .letter {
-    color : var(--kombu-green)
-}
-
-.arrow-icon {
-    padding: 0;
-    cursor: pointer;
-    color: var(--kombu-green);
-}
-
-.arrow-icon:hover {
-    transform: scale(1.2);
 }
 
 .display {
@@ -224,55 +179,32 @@ footer {
     padding: 40px 20%;
     overflow-y: scroll;
     width: 100%;
-    height: 90vh;
-    background-color: var(--gold-crayola);
-    border: 2px dashed var(--kombu-green);
+    height: 60vh;
     text-align: center;
 }
 
-@media screen and (max-width:375px) {
-
-    p {
-        text-align: left;
-    }
-
-    header {
-        padding: 20px;
-    }
-
-    .keyboard {
-        padding: 20px 0 20px 0;
-    }
-
-    .display {
-        padding: 40px 0;
-    }
-
-    .container {
-        width: 25px;
-        height: 25px;
-    }
-
-    .container-inactive {
-        width: 25px;
-        height: 25px;
-    }
-
-    .letter {
-        font-size: 15px;
-    }
-}
-
 .text-heading {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 50px;
-    color: var(--kombu-green)
+    padding: 20px 0;
+    text-align: left;
+    color: var(--mid);
+    font: var(--roboto-mono);
+    font-size: 60px;
+    font-weight: bold;
 }
 
 .text {
-    padding: 20px 50px;
+    padding: 20px 0 20px 15%;
     font-weight: 300;
-    text-align: justify;
-    color: var(--kombu-green);
+    text-align: left;
+    color: var(--darkest);
+    line-height: 200%;
+}
+
+.s-logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 80%;
+    color: var(--darkest);
 }

@@ -31,14 +31,7 @@ function S() {
     return (
     <div className="display" id={"display"}>
         <TextHeading heading="Skills" />
-        <div style={{
-            display: "flex", 
-            flexDirection: "row", 
-            flexWrap: "wrap", 
-            justifyContent: "center",
-            height: "80%",
-            color: "#283618"
-        }}>
+        <div className="s-logos">
         {logos.map(createLogo)}
         </div>
     </div>)

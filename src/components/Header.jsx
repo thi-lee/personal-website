@@ -3,8 +3,7 @@ import ScrollIntoView from "react-scroll-into-view";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
-
-// TODO: break Header into smaller components
+import Footer from "./Footer";
 
 function Logo() {
     return <div>
@@ -25,6 +24,7 @@ function Logo() {
 
 function Header() {
     return <header>
+    <div>
         <img 
             className="profile-photo" 
             src="./profile-photo.JPEG" 
@@ -40,6 +40,8 @@ function Header() {
                 </ScrollIntoView>
             </div>
         </div>
+    </div>
+    <Footer />
     </header>
 }
 
