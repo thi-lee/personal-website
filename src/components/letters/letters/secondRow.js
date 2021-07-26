@@ -27,7 +27,7 @@ const secondRow =  [
         id: 71,
         keyCode: "KeyG",
         letter: "G",
-        link: "/"
+        link: "/G"
     },
     {
         id: 72,

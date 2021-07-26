@@ -17,7 +17,7 @@ function Logo(props) {
         }}
         >
             <FontAwesomeIcon icon={props.fa} size="6x" />
-            <p>{props.name}</p>
+            <p style={{color: "#393D3F"}}>{props.name}</p>
         </div>
     )
 }

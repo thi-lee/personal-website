@@ -4,6 +4,7 @@
 
 :root {
     --roboto-mono: 'Roboto Mono', monospace;
+    --fira-sans: 'Fira Sans', sans-serif;
     
     --lightest: #FDFDFF;
     --darkest: #393D3F;
@@ -48,11 +49,11 @@ h1, p {
     margin: 0;
     text-align: center;
     font-size: 120%;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: var(--fira-sans);
 }
 
 p {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: var(--fira-sans);
 }
 
 .navigation {
@@ -181,7 +182,7 @@ footer {
     padding: 40px 20%;
     overflow-y: scroll;
     width: 100%;
-    height: 60vh;
+    height: 80vh;
     text-align: center;
 }
 
@@ -202,11 +203,45 @@ footer {
     line-height: 200%;
 }
 
+.photo {
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
 .s-logos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     height: 80%;
-    color: var(--darkest);
+    color: var(--mid);
+}
+
+svg:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    margin-right: 20px;
+    background-color: var(--lightest);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-content {
+    color: var(--lightest);
+    background-color: var(--mid);
+}
+
+.truths-lie, .photos {
+    padding: 20px 0 20px 15%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.photos {
+    overflow-y: scroll;
 }

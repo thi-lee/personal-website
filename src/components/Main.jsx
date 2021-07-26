@@ -4,6 +4,7 @@ import { TextHeading, Text } from "./letters/DisplayComps";
 
 import A from "../routes/A";
 import B from "../routes/B";
+import G from "../routes/G";
 import S from "../routes/S";
 
 function Main() {
@@ -21,6 +22,7 @@ function Main() {
             <Route exact path="/" component={Home} />
             <Route exact path="/A" component={A} />
             <Route exact path="/B" component={B} />
+            <Route exact path="/G" component={G} />
             <Route exact path="/S" component={S} />
         </Switch>
     )

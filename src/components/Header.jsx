@@ -27,7 +27,7 @@ function Header() {
     <div>
         <img 
             className="profile-photo" 
-            src="./profile-photo.PNG" 
+            src="./img/profile-photo.PNG" 
             alt="profile" 
         />
         <div className="header-text">
