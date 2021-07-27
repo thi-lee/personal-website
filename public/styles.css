@@ -222,21 +222,16 @@ svg:hover {
 }
 
 .card {
-    margin-right: 20px;
-    background-color: var(--lightest);
-    cursor: pointer;
-}
-
-.card:hover {
-    transform: scale(1.1);
-}
-
-.card-content {
-    color: var(--lightest);
+    font-family: var(--fira-sans);
     background-color: var(--mid);
+    color: var(--lightest);
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: -5px 5px lightgray;
 }
 
-.truths-lie, .photos {
+.cards, .photos {
     padding: 20px 0 20px 15%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -244,4 +239,25 @@ svg:hover {
 
 .photos {
     overflow-y: scroll;
+}
+
+.img-cap {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+}
+
+.next-page {
+    border: 2px dashed var(--mid);
+    padding: 20px 0 20px 0;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.next-page-link {
+    color: var(--darkest);
+}
+
+.next-page:hover {
+    transform: scale(1.01);
 }

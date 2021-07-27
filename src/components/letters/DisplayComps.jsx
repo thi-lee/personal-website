@@ -1,7 +1,4 @@
 import React from "react";
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
 
 function TextHeading(props) {
     return (
@@ -22,13 +19,15 @@ function Img(props) {
 }
 
 function Mycard(props) {
-    return (<Card className="card">
-        <CardContent className="card-content">
-            <Typography>
-                {props.cardContent}
-            </Typography>
-        </CardContent>
-    </Card>)
+    const customStyle={
+        fontSize: "120%",
+        paddingBottom: "5%",
+    }
+    return (
+    <div className="card">
+        <div style={customStyle}>{props.cardHeader}</div>
+        <div>{props.cardContent}</div>
+    </div>)
 }
 
 export { TextHeading, Text, Img, Mycard };
