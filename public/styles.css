@@ -182,7 +182,7 @@ footer {
     padding: 40px 20%;
     overflow-y: scroll;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     text-align: center;
 }
 
@@ -245,6 +245,13 @@ svg:hover {
     display: flex; 
     flex-direction: row; 
     align-items: center;
+}
+
+@media screen and (max-width: 840px) {
+    .img-cap {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .next-page {

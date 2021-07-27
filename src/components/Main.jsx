@@ -6,6 +6,7 @@ import A from "../routes/A";
 import B from "../routes/B";
 import G from "../routes/G";
 import S from "../routes/S";
+import P from "../routes/P";
 import W from "../routes/W";
 
 function Main() {
@@ -25,6 +26,7 @@ function Main() {
             <Route exact path="/B" component={B} />
             <Route exact path="/G" component={G} />
             <Route exact path="/S" component={S} />
+            <Route exact path="/P" component={P} />
             <Route exact path="/W" component={W} />
         </Switch>
     )
