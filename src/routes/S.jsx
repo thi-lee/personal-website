@@ -12,8 +12,7 @@ function Logo(props) {
             justifyContent: "center",
             alignItems: "center",
             width: "100px",
-            margin: "20px 40px 0px 40px",
-            cursor: "pointer"
+            margin: "20px 40px 0px 40px"
         }}
         >
             <FontAwesomeIcon icon={props.fa} size="6x" />

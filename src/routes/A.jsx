@@ -1,29 +1,24 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
-import W from "./W";
 import { TextHeading, Text, Img, Mycard } from "../components/letters/DisplayComps";
 
 function A() {
-    function handleClick() {
-        return <Route exact path="/W" component={W} />
-    }
     return (
         <div className="display" id={"display"}>
             <TextHeading heading="About Me" />
             <Text text="My name is Thi Le (pronounced like 'tea 🍵'), 
             and I am a CS sophomore at the University of North Carolina – Chapel Hill. " />
 
-            <div className="img-cap">
-                <Text text="I am from Vietnam, Saigon born and raised. 
-                I went to the US in 2017 to get a high school diploma and 
-                an Associate's degree at a community college in the Pacific Northwest.
-                Bellingham, which is two hours north of Seattle, is not well-known
-                but surely a beautiful and welcoming place. A city girl like me got to
-                hike many trails, kayak in many lakes, and observe the beautiful outlines 
-                of islands along the coast of Bellingham. And people, obviously, are 
-                the best part of everything. "/>
-                <Img src="./img/about-campus.jpg" />
-            </div>
+            <Text text="I am from Vietnam, Saigon born and raised. 
+            I went to the US in 2017 to get a high school diploma and 
+            an Associate's degree at a community college in the Pacific Northwest.
+            Bellingham, which is two hours north of Seattle, is not well-known
+            but surely a beautiful and welcoming place. A city girl like me got to
+            hike many trails, kayak in many lakes, and observe the beautiful outlines 
+            of islands along the coast of Bellingham. And people, obviously, are 
+            the best part of everything. "/>
+
+            <Img src="./img/fall-woburn.jpg"
+            figcaption="This is Bellingham" />
 
             <Text text="The college I attended offered mostly gen-ed classes, 
             so I got to explore the natural sciences, social sciences, and 
@@ -32,13 +27,8 @@ function A() {
             However, it surprisingly put my transfer application in a disadvantageous place 
             because I couldn't prove I have taken the right courses for any majors." />
 
-            <div className="img-cap" style={{paddingLeft: "15%"}}>
-            <Img src="./img/example-transcript.png" />
-                <p className="text" style={{padding: "0"}}>
-                    Here's an example of my courses, a snippet of my transcript.
-                    You name a category, I took a class in it.
-                </p>
-            </div>
+            <Img src="./img/example-transcript.png"
+            figcaption="You name a category, I took a class in it." />
 
             <Text text="At the time I thought I was doomed, even though I had actually
             enjoyed every single course I took and was eager to learn anything." />
@@ -83,11 +73,6 @@ function A() {
             uses technology in education, in healthcare, or in journalism. That someone
             might be completely strange to the present Thi. But whoever that stranger is,
             I am confident I have gotten the tools to handle her and her decisions. :)" />
-
-            <div className="next-page" onClick={handleClick}>
-            <Link className="next-page-link" to="/W">
-                [READ MORE] Why I choose Computer Science
-            </Link></div>
         </div>
         
     )

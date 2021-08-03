@@ -14,7 +14,10 @@ function Text(props) {
 
 function Img(props) {
     return (
-        <img className={`photo ${props.className}`} src={props.src} alt={props.alt} />
+        <figure>
+            <img className={`photo ${props.className}`} src={props.src} alt={props.alt} />
+            <figcaption>{props.figcaption}</figcaption>
+        </figure>
     )
 }
 

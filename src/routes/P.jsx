@@ -1,5 +1,6 @@
 import React from "react";
 import { TextHeading } from "../components/letters/DisplayComps";
+// import "https://cdn.jsdelivr.net/gh/Rapsssito/github-profile-badge@latest/src/widget.min.js";
 
 // import Slide from '@material-ui/core/Slide';
 
@@ -8,10 +9,7 @@ function P() {
         <div className="display" id={"display"}>
             <TextHeading heading="Projects" />
             
-            {/* <Slide> */}
-            {/* <Img src="./img/projects/project-restaurant-login.png" />
-            <Img src="./img/projects/project-restaurant-login.png" /> */}
-            {/* </Slide> */}
+            <div class="github-profile-badge" data-user="thi-lee"></div>
         </div>
         
     )

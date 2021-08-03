@@ -27,7 +27,7 @@ const lastRow =  [
         id: 66,
         keyCode: "KeyB",
         letter: "B",
-        link: "/B"
+        link: "/"
     },
     {
         id: 78,

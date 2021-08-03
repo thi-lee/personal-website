@@ -3,7 +3,6 @@ import { Route, Switch } from "react-router-dom";
 import { TextHeading, Text } from "./letters/DisplayComps";
 
 import A from "../routes/A";
-import B from "../routes/B";
 import G from "../routes/G";
 import S from "../routes/S";
 import P from "../routes/P";
@@ -24,7 +23,6 @@ function Main() {
         <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/A" component={A} />
-            <Route exact path="/B" component={B} />
             <Route exact path="/G" component={G} />
             <Route exact path="/S" component={S} />
             <Route exact path="/P" component={P} />
