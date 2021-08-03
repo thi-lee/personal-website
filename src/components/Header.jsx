@@ -3,7 +3,6 @@ import ScrollIntoView from "react-scroll-into-view";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
-import Footer from "./Footer";
 
 function Logo() {
     return <div>
@@ -24,24 +23,23 @@ function Logo() {
 
 function Header() {
     return <header>
-    <div>
-        <img 
-            className="profile-photo" 
-            src="./img/profile-photo.PNG" 
-            alt="profile" 
-        />
-        <div className="header-text">
-            <h1>Thi Le</h1>
-            <Logo />
-            <div className="navigation" id={"header"}>
-                <ScrollIntoView selector="#keyboard">
-                    <KeyboardArrowDownIcon className="arrow-icon" 
-                    style={{ width: "100%", fontSize: "70px", }}/>
-                </ScrollIntoView>
+        <div className="header-main">
+            <img 
+                className="profile-photo" 
+                src="./img/profile-photo.PNG" 
+                alt="profile" 
+            />
+            <div className="header-text">
+                <h1>Thi Le</h1>
+                <Logo />
+                <div className="navigation" id={"header"}>
+                    <ScrollIntoView selector="#keyboard">
+                        <KeyboardArrowDownIcon className="arrow-icon" 
+                        style={{ width: "100%", fontSize: "70px", }}/>
+                    </ScrollIntoView>
+                </div>
             </div>
         </div>
-    </div>
-    <Footer />
     </header>
 }
 

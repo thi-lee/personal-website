@@ -16,10 +16,11 @@ function Main() {
             <Text text="This personal website is inspired by the keyboard most of us use daily.
             Every light-colored letter above associates with a word or phrase,
             and when they are clicked, the corresponding information will be on display." />
+            {/* TODO: Cal To Action (CTA button) */}
         </div>
     }
     
-    return (
+    return (<div className="main">
         <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/A" component={A} />
@@ -29,6 +30,8 @@ function Main() {
             <Route exact path="/P" component={P} />
             <Route exact path="/W" component={W} />
         </Switch>
+        
+    </div>
     )
 }
 

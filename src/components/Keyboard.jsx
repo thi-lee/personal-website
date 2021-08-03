@@ -18,6 +18,8 @@ function Keyboard() {
             />)
     }
 
+    // when a key is clicked, show the difference
+
     return (
         <div className="keyboard" id={"keyboard"}>
             <div className="letter-row">{firstRow.map(createLetterKey)}</div>
