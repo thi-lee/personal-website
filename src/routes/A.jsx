@@ -1,14 +1,30 @@
 import React from "react";
-import { TextHeading, Text, Img, Mycard } from "../components/letters/DisplayComps";
+import { TextHeading, Img } from "../components/letters/DisplayComps";
+import CallMadeIcon from '@material-ui/icons/CallMade';
 
 function A() {
     return (
         <div className="display" id={"display"}>
             <TextHeading heading="About Me" />
-            <Text text="My name is Thi Le (pronounced like 'tea 🍵'), 
-            and I am a CS sophomore at the University of North Carolina – Chapel Hill. " />
+            <p style={{float: "right"}}><Img figcaption="Saigon raised, going everywhere" 
+            src="./img/me-in-chicago-2.JPG" /></p>
+            <p className="text"><b>I'm Thi</b> (pronounced like "tea 🍵&nbsp;").
+            I'm currently a sophomore at the University of North Carolina – Chapel Hill
+            where I study Computer Science.</p>
+            <p className="text"><b>In the last year</b>, &nbsp;
+            {/* TODO: Add a project page to display all projects*/}
+            I built websites and learned about web development <a href="https://github.com/thi-lee"><CallMadeIcon /></a> 
+            organized interviews and branch hiring process at Fitness and Lifestyle Group Vietnam <a href="https://www.fitlg.com/"><CallMadeIcon /></a>
+            and annotated image data for 1 month until I decided to quit and focus on coding<a href="https://alcherainc.com/en/"><CallMadeIcon /></a>.
+            </p>
+            <p className="text"><b>When in community college</b>, I took a breadth of gen-ed classes, 
+            helped migrate WCC's Learning Center to virtual operations while led tutor team for 1 year <a href="/"><CallMadeIcon /></a>
+            and was a VP of Campus Christian Fellowship where I raised ~$3,000 for 40 students to participate in a 200+ student weekend camp <a href="/"><CallMadeIcon /></a>.</p>
+            <p className="text"><b>Since Sep 21 I have</b>, spent two weeks in quarantine camp where I played card game with friends from all around Vietnam<a href="/"><CallMadeIcon /></a>
+            scrapped walls and painted walls <a href="/"><CallMadeIcon /></a>
+            and enjoyed Tet with homegrown veggies and wonderful cousins at grandparents' after 3 years <a href="/"><CallMadeIcon /></a>.</p>
 
-            <Text text="I am from Vietnam, Saigon born and raised. 
+            {/* <Text text="I am from Vietnam, Saigon born and raised. 
             I went to the US in 2017 to get a high school diploma and 
             an Associate's degree at a community college in the Pacific Northwest.
             Bellingham, which is two hours north of Seattle, is not well-known
@@ -72,8 +88,8 @@ function A() {
             an engineer, or a developer, or a researcher. I can become someone that
             uses technology in education, in healthcare, or in journalism. That someone
             might be completely strange to the present Thi. But whoever that stranger is,
-            I am confident I have gotten the tools to handle her and her decisions. :)" />
-        </div>
+            I am confident I have gotten the tools to handle her and her decisions. :)" />*/}
+        </div> 
         
     )
 }
