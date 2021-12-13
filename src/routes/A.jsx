@@ -9,20 +9,26 @@ function A() {
             <p style={{float: "right"}}><Img figcaption="Saigon raised, going everywhere" 
             src="./img/me-in-chicago-2.JPG" /></p>
             <p className="text"><b>I'm Thi</b> (pronounced like "tea 🍵&nbsp;").
-            I'm currently a sophomore at the University of North Carolina – Chapel Hill
-            where I study Computer Science.</p>
-            <p className="text"><b>In the last year</b>, &nbsp;
-            {/* TODO: Add a project page to display all projects*/}
-            I built websites and learned about web development <a href="https://github.com/thi-lee" target="_blank" rel="noreferrer"><CallMadeIcon /></a> 
-            organized interviews and branch hiring process at Fitness and Lifestyle Group Vietnam <a href="https://www.fitlg.com/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>
-            and annotated image data for 2 months<a href="https://alcherainc.com" target="_blank" rel="noreferrer"><CallMadeIcon /></a>.
+            I'm currently a sophomore at the University of North Carolina – Chapel Hill, majoring in Computer Science and minoring in Information Systems & Data Science.</p>
+            <p className="text"><b>From Aug 2021 to now</b>, &nbsp;
+                I lead sponsorship committee with HackNC <a href="https://hacknc.com/" target="_blank" rel="noreferrer"><CallMadeIcon /></a> 
+                create a hacker portal for HackNC 400+ participants, 
+                build website for NC locals to fight chronicle illnesses with CS+SG <a href="https://cssgunc.org/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>, and 
+                manage content for Carolina Analytics and Data Science <a href="http://carolinadata.unc.edu/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>. 
             </p>
-            <p className="text"><b>When in community college</b>, I took a breadth of gen-ed classes, 
-            helped migrate WCC's Learning Center to virtual operations while led tutor team for 1 year <a href="https://www.whatcom.edu/student-services/tutoring-learning-center" target="_blank" rel="noreferrer"><CallMadeIcon /></a>
+            <p className="text"><b>From Jun 2020 to Aug 2021</b>, &nbsp;
+            {/* TODO: Add a project page to display all projects*/}
+            I built websites (full-stack, front-end focused, and backend-focused) <a href="https://github.com/thi-lee" target="_blank" rel="noreferrer"><CallMadeIcon /></a>,  
+            coordinated the hiring process for 3 Fitness and Lifestyle Group Vietnam branches <a href="https://www.fitlg.com/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>, and 
+            wrote documentation for a buy now-pay later start-up Fundiin 
+            <a href="https://fundiin.vn/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>.
+            I also spent two weeks in quarantine camp in Uong Bi, Quang Ninh, Vietnam, scrapped and painted walls to rejuvenate an apartment, and ran multiple 10K's. 
+            </p>
+            <p className="text"><b>From Sep 2017 to Jun 2020</b>, I migrated the WCC's Learning Center to virtual operations while leading the Writing Center tutor team for 1 year <a href="https://www.whatcom.edu/student-services/tutoring-learning-center" target="_blank" rel="noreferrer"><CallMadeIcon /></a>
             and was a VP of Campus Christian Fellowship where I raised ~$3,000 for 40 students to participate in a 200+ student weekend camp <a href="https://www.ccfwhatcom.com/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>.</p>
-            <p className="text"><b>Since Sep 21 I have</b>, spent two weeks in quarantine camp where I played card game with friends from all around Vietnam<a href="/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>
+            {/* <p className="text"><b>Since Sep 21 I have</b>, spent two weeks in quarantine camp where I played card game with friends from all around Vietnam<a href="/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>
             scrapped walls and painted walls <a href="https://drive.google.com/drive/folders/1VZ4KMY5C7uCdNvZ0j_fyIU87pjS8f30F?usp=sharing" target="_blank" rel="noreferrer"><CallMadeIcon /></a>
-            and enjoyed Tet with homegrown veggies and wonderful cousins at grandparents' after 3 years <a href="/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>.</p>
+            and enjoyed Tet with homegrown veggies and wonderful cousins at grandparents' after 3 years <a href="/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>.</p> */}
 
             {/* <Text text="I am from Vietnam, Saigon born and raised. 
             I went to the US in 2017 to get a high school diploma and 

@@ -9,7 +9,7 @@ const firstRow =  [
         id: 87,
         keyCode: "KeyW",
         letter: "W",
-        link: "/W"
+        link: "/"
     },
     {
         id: 69,
@@ -57,7 +57,7 @@ const firstRow =  [
         id: 80,
         keyCode: "KeyP",
         letter: "P",
-        link: "/P"
+        link: "/"
     }
 ]
 

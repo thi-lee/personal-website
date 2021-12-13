@@ -7,6 +7,7 @@ import G from "../routes/G";
 import S from "../routes/S";
 import P from "../routes/P";
 import W from "../routes/W";
+import resume from "../routes/Resume"
 
 function Main() {
     function Home() {
@@ -23,10 +24,11 @@ function Main() {
         <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/A" component={A} />
-            <Route exact path="/G" component={G} />
+            {/* <Route exact path="/G" component={G} /> */}
             <Route exact path="/S" component={S} />
-            <Route exact path="/P" component={P} />
-            <Route exact path="/W" component={W} />
+            {/* <Route exact path="/P" component={P} />
+            <Route exact path="/W" component={W} /> */}
+            {/* <Route exact path="/resume" component={resume} /> */}
         </Switch>
         
     </div>
