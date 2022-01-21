@@ -3,11 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import { TextHeading, Text } from "./letters/DisplayComps";
 
 import A from "../routes/A";
-import G from "../routes/G";
 import S from "../routes/S";
-import P from "../routes/P";
-import W from "../routes/W";
-import resume from "../routes/Resume"
 
 function Main() {
     function Home() {

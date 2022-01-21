@@ -7,16 +7,20 @@ function A() {
         <div className="display" id={"display"}>
             <TextHeading heading="About Me" />
             <p style={{float: "right"}}><Img figcaption="Saigon raised, going everywhere" 
-            src="./img/me-in-chicago-2.JPG" /></p>
+            src="./img/thi-le.JPG" /></p>
             <p className="text"><b>I'm Thi</b> (pronounced like "tea 🍵&nbsp;").
-            I'm currently a sophomore at the University of North Carolina – Chapel Hill, majoring in Computer Science and minoring in Information Systems & Data Science.</p>
-            <p className="text"><b>From Aug 2021 to now</b>, &nbsp;
-                I lead sponsorship committee with HackNC <a href="https://hacknc.com/" target="_blank" rel="noreferrer"><CallMadeIcon /></a> 
+            I'm currently a sophomore at the University of North Carolina – Chapel Hill, 
+            majoring in Computer Science and minoring in Information Systems & Data Science.</p>
+            <p className="text"><b>From Aug 2021 to now</b>,&nbsp;
+                I lead sponsorship committee with HackNC <a href="https://hacknc.com/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>, 
                 create a hacker portal for HackNC 400+ participants, 
                 build website for NC locals to fight chronicle illnesses with CS+SG <a href="https://cssgunc.org/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>, and 
                 manage content for Carolina Analytics and Data Science <a href="http://carolinadata.unc.edu/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>. 
+                I am also on the sponsorship committee for Pearl Hacks <a href="https://pearlhacks.com/" target="_blank" rel="noreferrer"><CallMadeIcon /></a> 
+                and am a teaching assistant for UNC Girls Who Code <a href="https://girlswhocode.web.unc.edu/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>. 
+                Through these activities, I get to hone my soft and hard skills, as well as build relationships with other CS fellows and staff @ UNC. 
             </p>
-            <p className="text"><b>From Jun 2020 to Aug 2021</b>, &nbsp;
+            <p className="text"><b>From Jun 2020 to Aug 2021</b>,&nbsp;
             {/* TODO: Add a project page to display all projects*/}
             I built websites (full-stack, front-end focused, and backend-focused) <a href="https://github.com/thi-lee" target="_blank" rel="noreferrer"><CallMadeIcon /></a>,  
             coordinated the hiring process for 3 Fitness and Lifestyle Group Vietnam branches <a href="https://www.fitlg.com/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>, and 
@@ -95,6 +99,12 @@ function A() {
             uses technology in education, in healthcare, or in journalism. That someone
             might be completely strange to the present Thi. But whoever that stranger is,
             I am confident I have gotten the tools to handle her and her decisions. :)" />*/}
+
+            <p className="text">
+            This personal website is inspired by the keyboard most of us use daily.
+            Every light-colored letter above associates with a word or phrase,
+            and when they are clicked, the corresponding information will be on display.
+            </p>
         </div> 
         
     )

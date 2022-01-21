@@ -26,11 +26,11 @@ function Header() {
         <div className="header-main">
             <img 
                 className="profile-photo" 
-                src="./img/profile-photo.PNG" 
+                src="./img/profile-photo.JPG" 
                 alt="profile" 
             />
             <div className="header-text">
-                <h1>Thi Le</h1>
+                <h1>Thi Le (Tea)</h1>
                 <Logo />
                 <div className="navigation" id={"header"}>
                     <ScrollIntoView selector="#keyboard">
