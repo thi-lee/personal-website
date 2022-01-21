@@ -251,10 +251,6 @@ header h1 {
     overflow-y: scroll;
 }
 
-figure {
-    
-}
-
 @media screen and (max-width: 840px) {
     .img-cap {
         display: flex;

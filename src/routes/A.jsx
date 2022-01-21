@@ -6,8 +6,8 @@ function A() {
     return (
         <div className="display" id={"display"}>
             <TextHeading heading="About Me" />
-            <p style={{float: "right"}}><Img figcaption="Saigon raised, going everywhere" 
-            src="./img/thi-le.JPG" /></p>
+            <Img figcaption="Saigon raised, going everywhere" 
+            src="./img/thi-le.JPG" />
             <p className="text"><b>I'm Thi</b> (pronounced like "tea 🍵&nbsp;").
             I'm currently a sophomore at the University of North Carolina – Chapel Hill, 
             majoring in Computer Science and minoring in Information Systems & Data Science.</p>
@@ -22,14 +22,27 @@ function A() {
             </p>
             <p className="text"><b>From Jun 2020 to Aug 2021</b>,&nbsp;
             {/* TODO: Add a project page to display all projects*/}
-            I built websites (full-stack, front-end focused, and backend-focused) <a href="https://github.com/thi-lee" target="_blank" rel="noreferrer"><CallMadeIcon /></a>,  
-            coordinated the hiring process for 3 Fitness and Lifestyle Group Vietnam branches <a href="https://www.fitlg.com/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>, and 
+            I built websites (full-stack, front-end focused, and backend-focused) 
+            <a href="https://github.com/thi-lee" target="_blank" rel="noreferrer"><CallMadeIcon /></a>,  
+            coordinated the hiring process for 3 Fitness and Lifestyle Group Vietnam branches 
+            <a href="https://www.fitlg.com/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>, and 
             wrote documentation for a buy now-pay later start-up Fundiin 
             <a href="https://fundiin.vn/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>.
-            I also spent two weeks in quarantine camp in Uong Bi, Quang Ninh, Vietnam, scrapped and painted walls to rejuvenate an apartment, and ran multiple 10K's. 
+            I also spent two weeks in quarantine camp in Uong Bi, Quang Ninh, Vietnam, 
+            volunteered to translate 30+ Math videos to Vietnamese 
+            <a href="https://vi.khanacademy.org/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>
+            , and ran multiple 10K's. 
             </p>
-            <p className="text"><b>From Sep 2017 to Jun 2020</b>, I migrated the WCC's Learning Center to virtual operations while leading the Writing Center tutor team for 1 year <a href="https://www.whatcom.edu/student-services/tutoring-learning-center" target="_blank" rel="noreferrer"><CallMadeIcon /></a>
-            and was a VP of Campus Christian Fellowship where I raised ~$3,000 for 40 students to participate in a 200+ student weekend camp <a href="https://www.ccfwhatcom.com/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>.</p>
+            <p className="text"><b>From Sep 2017 to Jun 2020</b>, I migrated the WCC's Learning Center 
+            to virtual operations while leading the Writing Center tutor team for 1 year 
+            <a href="https://www.whatcom.edu/student-services/tutoring-learning-center" target="_blank" 
+            rel="noreferrer"><CallMadeIcon /></a>and was a VP of Campus Christian Fellowship where I 
+            raised ~$3,000 for 40 students to participate in a 200+ student weekend camp 
+            <a href="https://www.ccfwhatcom.com/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>.</p>
+            <p className="text">I've done a wide variety of things and I enjoyed the experience I had.
+            Currently, I focus on finishing my CS degree while making the most out of my student life.
+            If you want to grab a coffee and chat about the many exciting things in life, you can find me
+            at thi.le@unc.edu.</p>
             {/* <p className="text"><b>Since Sep 21 I have</b>, spent two weeks in quarantine camp where I played card game with friends from all around Vietnam<a href="/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>
             scrapped walls and painted walls <a href="https://drive.google.com/drive/folders/1VZ4KMY5C7uCdNvZ0j_fyIU87pjS8f30F?usp=sharing" target="_blank" rel="noreferrer"><CallMadeIcon /></a>
             and enjoyed Tet with homegrown veggies and wonderful cousins at grandparents' after 3 years <a href="/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>.</p> */}
@@ -100,10 +113,11 @@ function A() {
             might be completely strange to the present Thi. But whoever that stranger is,
             I am confident I have gotten the tools to handle her and her decisions. :)" />*/}
 
-            <p className="text">
-            This personal website is inspired by the keyboard most of us use daily.
+            <p className="text" style={{color: "#62929E"}}>
+            ***This personal website is inspired by the keyboard most of us use daily.
             Every light-colored letter above associates with a word or phrase,
             and when they are clicked, the corresponding information will be on display.
+            Click 'S' to go to Skills page.***
             </p>
         </div> 
         

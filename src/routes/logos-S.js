@@ -1,4 +1,5 @@
 import { faJs, faNodeJs, faReact, faGitAlt, faNpm, faBootstrap, faAngular } from '@fortawesome/free-brands-svg-icons';
+import { faPython, faJava } from '@fortawesome/free-brands-svg-icons';
 import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 const logos = [
@@ -13,6 +14,21 @@ const logos = [
         name: "Javascript"
     },
     {
+        id: 9, 
+        fa: faPython,
+        name: "Python"
+    },
+    {
+        id: 10,
+        fa: faJava,
+        name: "Java"
+    },
+    {
+        id: 5,
+        fa: faNodeJs,
+        name: "NodeJS"
+    },
+    {
         id: 3,
         fa: faReact,
         name: "React"
@@ -21,11 +37,6 @@ const logos = [
         id: 4,
         fa: faAngular,
         name: "Angular"
-    },
-    {
-        id: 5,
-        fa: faNodeJs,
-        name: "NodeJS"
     },
     {
         id: 6,

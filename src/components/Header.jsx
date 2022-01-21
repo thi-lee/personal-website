@@ -8,7 +8,7 @@ function Logo() {
     return <div>
         <a 
         className="header-logo" 
-        href="https://www.linkedin.com/in/thilehy/" 
+        href="https://www.linkedin.com/in/thilehoangy/" 
         target="_blank" rel="noreferrer">
             <FontAwesomeIcon className="header-logo" icon={faLinkedin} size="2x" />
         </a>

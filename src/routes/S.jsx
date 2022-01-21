@@ -33,9 +33,6 @@ function S() {
         <div className="s-logos">
         {logos.map(createLogo)}
         </div>
-        <div className="text-heading">
-            Hello world
-        </div>
     </div>)
 }
 
