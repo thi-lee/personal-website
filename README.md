@@ -23,11 +23,6 @@
 - I struggled most with design. I was constantly concerning that my website won't look intuitive or will be hard to navigate.
 - As the project grows larger with more routes and components, I need to keep files organized 
 
-### Screenshot
-
-![](./public/img/screenshot1.png)
-![](./public/img/screenshot2.png)
-
 ### Links
 
 Live Site URL: [Thi Le](https://dorathilee.netlify.app/)
