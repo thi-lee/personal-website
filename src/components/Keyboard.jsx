@@ -15,6 +15,7 @@ function Keyboard() {
                     : "container-inactive"
                 }
                 to={item.link}
+                name={item.name}
             />)
     }
 

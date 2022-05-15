@@ -57,7 +57,8 @@ const firstRow =  [
         id: 80,
         keyCode: "KeyP",
         letter: "P",
-        link: "/P"
+        link: "/P",
+        name: "Project"
     }
 ]
 

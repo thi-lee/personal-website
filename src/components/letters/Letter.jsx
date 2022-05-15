@@ -11,8 +11,11 @@ function Letter(props) {
     }
 
     return (
-        <div className={`${props.container}`} >
-            {props.container === "container" ? activeKey() : inactiveKey()}
+        <div>
+            <div className={`${props.container}`} >
+                {props.container === "container" ? activeKey() : inactiveKey()}
+            </div>
+            <p>{props.name}</p>
         </div>
     )
 }

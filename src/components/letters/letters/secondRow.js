@@ -4,12 +4,14 @@ const secondRow =  [
         keyCode: "KeyA",
         letter: "A",
         link: "/A",
+        name: "About"
     },
     {
         id: 83,
         keyCode: "KeyS",
         letter: "S",
-        link: "/S"
+        link: "/S",
+        name: "Skills"
     },
     {
         id: 68,
