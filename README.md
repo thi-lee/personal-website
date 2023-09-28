@@ -33,7 +33,7 @@
 
 ### Links
 
-Live Site URL: [thilehoangy.com](https://www.notion.so/Github-Personal-website-0c5fa603d9174833ae9e1e9d731bcf63)
+Live Site URL: 
 
 ## My process
 

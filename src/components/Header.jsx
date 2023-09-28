@@ -33,7 +33,7 @@ function Header() {
                 <h1>Thi Le (Tea)</h1>
                 <Logo />
                 <div className="navigation" id={"header"}>
-                    <ScrollIntoView selector="#keyboard">
+                    <ScrollIntoView selector="#display">
                         <KeyboardArrowDownIcon className="arrow-icon" 
                         style={{ width: "100%", fontSize: "70px", }}/>
                     </ScrollIntoView>

@@ -6,10 +6,10 @@ function A() {
     return (
         <div className="display" id={"display"}>
             <TextHeading heading="About Me" />
-            <Img figcaption="Saigon raised, going everywhere" 
-            src="./img/thi-le.JPG" />
+            {/* <Img figcaption="Saigon raised, going everywhere" 
+            src="./img/thi-le.JPG" /> */}
             <p className="text"><b>I'm Thi</b> (pronounced like "tea 🍵&nbsp;").
-            I'm currently a sophomore at the University of North Carolina – Chapel Hill, 
+            I'm currently a senior at the University of North Carolina – Chapel Hill, 
             majoring in Computer Science and minoring in Information Systems & Data Science.</p>
             <p className="text"><b>From Aug 2021 to now</b>,&nbsp;
                 I lead sponsorship committee with HackNC <a href="https://hacknc.com/" target="_blank" rel="noreferrer"><CallMadeIcon /></a>, 

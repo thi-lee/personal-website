@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 25rem;
+    height: 35rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.card-title {
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--darkest);
+    font-weight: 600;
+    font-size: 25px;
+}
